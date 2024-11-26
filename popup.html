@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Summarizer Extension</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">AI Text Summarizer</h1>
+      <div class="controls">
+        <textarea
+          id="prompt"
+          placeholder="Enter text to summarize or use the 'Get Selected Text' button"
+        ></textarea>
+        <div class="buttons">
+          <button id="getSelected">Get Selected Text</button>
+          <button id="sendPrompt">Summarize</button>
+          <button id="stopPrompt">Stop</button>
+        </div>
+      </div>
+      <div id="status"></div>
+      <div id="output"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

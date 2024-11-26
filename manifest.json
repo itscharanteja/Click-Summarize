@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "AI Summarizer Extension",
+  "version": "1.0",
+  "description": "Demo of Chrome's Summarizer API",
+  "permissions": ["aiLanguageModelOriginTrial", "activeTab", "scripting"],
+  "trial_tokens": [
+    "AkXFl6MuC834JY/MwNWd4vsFPj3qQQYJzP/o4mRplA1xtxvdW8iTfv5+EMosiTLWOJeMOFIp61UjArn9BCcufwoAAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vYmJoYWlmZmRtaWlnaGNnanBhbWtmaGptYmlqZ2piZGUiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9+ftD6IVpfohGylrHtGKUqElEojmOMdyFzk18utHJOXZS0SAoIxbM7ngUAAAB0eyJvcmlnaW4iOiJodHRwczovL2VuLndpa2lwZWRpYS5vcmc6NDQzIiwiZmVhdHVyZSI6IkFJUHJvbXB0QVBJRm9yRXh0ZW5zaW9uIiwiZXhwaXJ5IjoxNzYwNDg2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0="
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
