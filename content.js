@@ -3,5 +3,5 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const selectedText = window.getSelection().toString().trim();
     sendResponse({ text: selectedText });
   }
-  return true; // Required for async response
+  return true; 
 });
